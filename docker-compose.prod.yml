@@ -1,0 +1,20 @@
+services:
+  frontend:
+    image: check-frontend-prod
+    build:
+      target: prod
+    environment:
+      NODE_ENV: production
+    volumes: !reset []
+
+  backend:
+    image: check-backend-prod
+    build:
+      target: prod
+    environment:
+      NODE_ENV: production
+    volumes: !override
+      - uploads:/app/uploads
+
+volumes:
+  uploads:
