@@ -2,6 +2,9 @@ _This project has been created as part of the 42 curriculum by akreise, dcampas,
 
 # ft_transcendence
 
+> [!WARNING]
+> This project is no longer maintained. Its dependencies were last updated in October 2026 and some of them have known vulnerabilities. Before running it anywhere other than locally, it is highly recommended to run `npm audit` and update the affected packages (`npm audit fix` covers the non-breaking ones; anything that needs `--force` involves major-version upgrades and should be tested).
+
 ## 1. Description
 
 **ft_transcendence** is the capstone web project of the 42 core curriculum. Under this version of the subject the team is free to build any web application it likes, as long as it meets the mandatory technical baseline and earns enough module points — this team chose to build a real-time, multiplayer **Pong** platform. Beyond the game itself, the project delivers a full social platform around it — accounts, friends, live chat, presence, match history, statistics and tournaments — served over HTTPS behind an Nginx reverse proxy, fully containerized with Docker.
